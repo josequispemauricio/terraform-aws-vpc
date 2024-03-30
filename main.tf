@@ -1,3 +1,10 @@
+/*
+* TERRAFORM AWS VPC
+*
+* documentation terraform for VPC AWS
+*
+*/
+
 resource "aws_vpc" "vpc_module" {
   cidr_block = var.cidr_block_input
 }
