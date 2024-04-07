@@ -9,6 +9,10 @@ resource "aws_vpc" "vpc_module" {
   cidr_block = var.cidr_block_input
 }
 
+resource "aws_vpc" "vpc_module_new" {
+  cidr_block = var.cidr_block_input
+}
+
 resource "aws_subnet" "subnet_modulevpc" {
   for_each = var.subnets_data_input
 
